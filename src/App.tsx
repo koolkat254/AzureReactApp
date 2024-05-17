@@ -6,7 +6,6 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  const ownerName = process.env.ownerName
 
   return (
     <>
@@ -19,7 +18,6 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <h1>Owner: {ownerName}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
